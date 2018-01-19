@@ -12,7 +12,7 @@ const scope = 'snsapi_userinfo';
 var menus = {
   "button": [
     {
-      "name": "测试菜单1",
+      "name": "测试菜单2",
       "sub_button": [
         {
           "type": "view",

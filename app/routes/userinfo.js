@@ -9,7 +9,7 @@ router.get('/', function (req, res) {
     })
     .then(function (data) {
       getUserInfo(data['access_token'], data['openid']).then(_ => {
-        res.render('index.html', JSON.parse(_));
+        res.render('index2.html', JSON.parse(_));
       })
     }).
     catch(function (err) {
