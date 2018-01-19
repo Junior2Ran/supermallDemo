@@ -5,20 +5,21 @@ const config = require('../../wxconfig');
 //token
 const token = fs.readFileSync('./token').toString();
 const AppID = config.appId;
-const return_uri = 'http://supermall.junior2ran.cn/';
+const return_uri1 = 'http://supermall.junior2ran.cn/';
+const return_uri2 = 'http://supermall.junior2ran.cn/ver';
 const scope = 'snsapi_userinfo';
 
 //常用type为view和click,分别为点击事件和链接
 var menus = {
   "button": [
     {
-      "name": "测试菜单2",
-      "sub_button": [
-        {
-          "type": "view",
-          "name": "电商平台",
-          "url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+AppID+'&redirect_uri='+return_uri+'&response_type=code&scope='+scope+'&state=1#wechat_redirect'
-        }]
+      "name": "通用平台商城",
+      "type": "view",
+      "url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+AppID+'&redirect_uri='+return_uri1+'&response_type=code&scope='+scope+'&state=1#wechat_redirect'
+    },{
+      "name": "土特产商城",
+      "type": "view",
+      "url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+AppID+'&redirect_uri='+return_uri2+'&response_type=code&scope='+scope+'&state=1#wechat_redirect'
     }]
 };
 

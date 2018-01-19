@@ -9,6 +9,21 @@ router.get('/', function (req, res) {
     })
     .then(function (data) {
       getUserInfo(data['access_token'], data['openid']).then(_ => {
+        res.render('index.html', JSON.parse(_));
+      })
+    }).
+    catch(function (err) {
+      console.log(err);
+    });
+});
+
+router.get('/ver', function (req, res) {
+  getToken(req.query.code)
+    .then(function (data) {
+      return JSON.parse(data);
+    })
+    .then(function (data) {
+      getUserInfo(data['access_token'], data['openid']).then(_ => {
         res.render('index2.html', JSON.parse(_));
       })
     }).
