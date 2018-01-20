@@ -2,8 +2,9 @@ const router = require('express').Router();
 const getJsApiData = require('../libs/getJsApiData');
 const config = require('../../wxconfig');
 
-router.get('/auth', function (req, res) {
-  var clientUrl = 'http://' + req.hostname + req.url;
+router.post('/auth', function (req, res) {
+  var clientUrl = decodeURIComponent(req.body.url);
+  console.log(clientUrl);
   getJsApiData(clientUrl).then(data => {
     var content = {
         signature: data[0], 
@@ -12,7 +13,8 @@ router.get('/auth', function (req, res) {
         appId: config.appId
     };
     // res.render('base.html', content);
-    res.send(200, {status: 1, result: content});
+    res.header("Content-Type", "application/json;charset=utf-8");
+    res.send({status: 1, result: content});
   });
 });
 
