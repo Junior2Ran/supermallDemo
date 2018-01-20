@@ -42,7 +42,7 @@ function getSign(jsApiTicket, noncestr, timestamp, url) {
     'jsapi_ticket': jsApiTicket,
     'noncestr': noncestr,
     'timestamp': timestamp,
-    'url': 'http://supermall.junior2ran.cn/auth'
+    'url': 'http://supermall.junior2ran.cn/'
   };
   var sortData = "jsapi_ticket=" + jsApiTicket + "&noncestr=" + noncestr + "&timestamp=" + timestamp + "&url=" + url;
   console.log(sortData);
