@@ -4,6 +4,7 @@ const getUserInfo = require('../websdk/getWebUserInfo');
 const config = require('../../wxconfig');
 
 router.get('/', function (req, res) {
+  console.log(req.originalUrl);
   var redirect_uri = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+config.appId+'&redirect_uri='+config.domainHost+req.originalUrl+'&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
   if (!req.query.code) {
     res.redirect(redirect_uri);
