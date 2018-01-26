@@ -3,9 +3,8 @@ const getToken = require('../websdk/getWebToken');
 const getUserInfo = require('../websdk/getWebUserInfo');
 const config = require('../../wxconfig');
 
-
 router.get('/', function (req, res) {
-  var redirect_uri = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+config.appId+'&redirect_uri=http://supermall.junior2ran.cn'+req.originalUrl+'&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
+  var redirect_uri = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+config.appId+'&redirect_uri='+config.domainHost+req.originalUrl+'&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
   if (!req.query.code) {
     res.redirect(redirect_uri);
   }
