@@ -1,27 +1,34 @@
 const router = require('express').Router();
+const querystring = require("querystring");
 const getToken = require('../websdk/getWebToken');
 const getUserInfo = require('../websdk/getWebUserInfo');
 const config = require('../../wxconfig');
 
 router.get('/', function (req, res) {
   console.log(req.originalUrl);
-
+  var host = config.domainHost;
   //重定向后会带上state参数，开发者可以填写a-zA-Z0-9的参数值，最多128字节
-  var redirect_uri = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+config.appId+'&redirect_uri='+config.domainHost+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
+  var redirect_uri = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+config.appId+'&redirect_uri='+host+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
   if (!req.query.code) {
- var state = JSON.stringify(req.query);
-var state_uri = redirect_uri.replace(/STATE/g, state);
-console.log(state_uri)
-    res.redirect(state_uri);
->>>>>>> Stashed changes
+    var encodeParams = encodeURIComponent(req.originalUrl);
+    var params_uri = redirect_uri.replace(host, host+encodeParams);  // 参数放在redirect_uri里会被丢失，只能通过转码来传递
+    console.log(params_uri)
+    res.redirect(params_uri);
   }
   else{
     getToken(req.query.code)
     .then(function (data) {
       if(JSON.parse(data).errcode){
-        res.redirect(redirect_uri);
+        var paramsObj = req.query;
+              delete paramsObj.code;
+              delete paramsObj.state;
+              var paramsUrl = '/?'+querystring.stringify(paramsObj)
+        var encodeParams = encodeURIComponent(paramsUrl);
+              var params_uri = redirect_uri.replace(host, host+encodeParams);  // 参数放在redirect_uri里会被丢失，只能通过转码来传递
+        res.redirect(params_uri);
+      } else {
+        return JSON.parse(data);
       }
-      return JSON.parse(data);
     })
     .then(function (data) {
       getUserInfo(data['access_token'], data['openid']).then(_ => {
