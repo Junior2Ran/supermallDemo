@@ -5,8 +5,12 @@ const config = require('../../wxconfig');
 
 router.get('/', function (req, res) {
   console.log(req.originalUrl);
-  var redirect_uri = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+config.appId+'&redirect_uri='+config.domainHost+req.originalUrl+'&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
+  //重定向后会带上state参数，开发者可以填写a-zA-Z0-9的参数值，最多128字节
+  var redirect_uri = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+config.appId+'&redirect_uri='+config.domainHost+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
   if (!req.query.code) {
+    var state = {
+      from_user: req.query.from_user
+    };
     res.redirect(redirect_uri);
   }
   else{
