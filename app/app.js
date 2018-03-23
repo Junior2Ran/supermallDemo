@@ -13,6 +13,20 @@ getToken();
 const createMenu = require('./libs/wxCustomeMenu');
 createMenu();
 
+//解析xml
+app.use(bodyParser.xml({
+  limit: '1MB',
+  xmlParseOptions: {
+    normalize: true,
+    normalizeTags: true,
+    explicitArray: false
+  }
+}));
+//解析json
+app.use(bodyParser.json({
+  limit: '1MB'
+}));
+
 //引入路由
 const weixin = require('./routes/weixin');
 const auth = require('./routes/auth');
@@ -29,20 +43,6 @@ app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
     next();
 });
-
-//解析xml
-app.use(bodyParser.xml({
-  limit: '1MB',
-  xmlParseOptions: {
-    normalize: true,
-    normalizeTags: true,
-    explicitArray: false
-  }
-}));
-//解析json
-app.use(bodyParser.json({
-  limit: '1MB'
-}));
 
 //启用nunjucks模板
 app.engine('html', nunjucks.render);
