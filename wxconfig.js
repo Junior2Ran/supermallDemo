@@ -4,5 +4,6 @@ module.exports = {
   'encodingAESKey': 'PNuRoIzJBEWYCOR96Zrxe0h1bZCOACEkY9b0gQDeDms',
   'appSecret': '0094e566a880a093082b7e805f5b1c71',
   'appKey': 'SWCzyc20161021SWCzyc20161021aaaa',
-  'domainHost': 'http://ymymmall.swczyc.com'
+  'domainHost': 'http://ymymmall.swczyc.com',
+  'secondaryHost': 'http://ymymmall.swczyc.com/ver'
 };
