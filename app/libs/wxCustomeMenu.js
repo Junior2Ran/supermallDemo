@@ -15,11 +15,11 @@ var menus = {
     {
       "name": "通用平台商城",
       "type": "view",
-      "url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+AppID+'&redirect_uri='+return_uri2+'&response_type=code&scope='+scope+'&state=1#wechat_redirect'
+      "url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+AppID+'&redirect_uri='+return_uri1+'&response_type=code&scope='+scope+'&state=1#wechat_redirect'
     },{
       "name": "土特产商城",
       "type": "view",
-      "url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+AppID+'&redirect_uri='+return_uri1+'&response_type=code&scope='+scope+'&state=1#wechat_redirect'
+      "url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+AppID+'&redirect_uri='+return_uri2+'&response_type=code&scope='+scope+'&state=1#wechat_redirect'
     }]
 };
 
