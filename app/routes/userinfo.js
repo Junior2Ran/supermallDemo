@@ -43,8 +43,8 @@ router.get('/', function (req, res) {
 
 router.get('/ver', function (req, res) {
   console.log(req.originalUrl);
-  // var host = config.domainHost;
-  var host = config.secondaryHost;
+  var host = config.domainHost;
+  // var host = config.secondaryHost;
   //重定向后会带上state参数，开发者可以填写a-zA-Z0-9的参数值，最多128字节
   var redirect_uri = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+config.appId+'&redirect_uri='+host+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
   if (!req.query.code) {
