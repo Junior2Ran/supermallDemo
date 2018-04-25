@@ -5,8 +5,8 @@ const config = require('../../wxconfig');
 //token
 const token = fs.readFileSync('./token').toString();
 const AppID = config.appId;
-const return_uri1 = 'http://supermall.junior2ran.cn/';
-const return_uri2 = 'http://supermall.junior2ran.cn/ver';
+const return_uri1 = config.domainHost;
+const return_uri2 = config.domainHost+'/ver';
 const scope = 'snsapi_userinfo';
 
 //常用type为view和click,分别为点击事件和链接

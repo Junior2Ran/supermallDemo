@@ -41,7 +41,7 @@ const refreshToken = function () {
   saveToken();
   setInterval(function () {
     saveToken();
-  }, 7200*1000);
+  }, 7000*1000);
 };
 
 module.exports = refreshToken;
