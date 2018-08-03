@@ -4,7 +4,7 @@ const getToken = require('../websdk/getWebToken');
 const getUserInfo = require('../websdk/getWebUserInfo');
 const config = require('../../wxconfig');
 
-router.get('/', function (req, res) {
+router.get('/ver', function (req, res) {
   console.log(req.originalUrl);
   var host = config.domainHost;
   //重定向后会带上state参数，开发者可以填写a-zA-Z0-9的参数值，最多128字节
@@ -41,7 +41,7 @@ router.get('/', function (req, res) {
   }
 });
 
-router.get('/ver', function (req, res) {
+router.get('/', function (req, res) {
   console.log(req.originalUrl);
   var host = config.domainHost;
   // var host = config.secondaryHost;
