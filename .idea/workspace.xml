@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959a1f5b-ec3e-409c-a725-86f201b6c135" name="Default" comment="update server">
+    <list default="true" id="959a1f5b-ec3e-409c-a725-86f201b6c135" name="Default" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bundle-cb589a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/vendor-cb589a.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,11 +53,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="7" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="7" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -74,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/app/routes/userinfo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+              <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -306,21 +311,7 @@
       <workItem from="1533550708471" duration="384000" />
       <workItem from="1533555111261" duration="68000" />
       <workItem from="1533555228593" duration="63000" />
-      <workItem from="1533649545546" duration="818000" />
-    </task>
-    <task id="LOCAL-00182" summary="update server">
-      <created>1532676762211</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1532676762211</updated>
-    </task>
-    <task id="LOCAL-00183" summary="update server">
-      <created>1532676951167</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1532676951167</updated>
+      <workItem from="1533649545546" duration="2455000" />
     </task>
     <task id="LOCAL-00184" summary="update server">
       <created>1532679423270</created>
@@ -651,17 +642,30 @@
       <option name="project" value="LOCAL" />
       <updated>1533550867015</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="回退">
+      <created>1533650707748</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1533650707748</updated>
+    </task>
+    <task id="LOCAL-00232" summary="1">
+      <created>1533653567088</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1533653567088</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140120000" />
+    <option name="totallyTimeSpent" value="141757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
+    <frame x="249" y="73" width="946" height="558" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15937941" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24889868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -691,7 +695,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="update server" />
-    <option name="LAST_COMMIT_MESSAGE" value="update server" />
+    <MESSAGE value="回退" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -816,7 +822,7 @@
     <entry file="file://$PROJECT_DIR$/app/routes/userinfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
         </state>
       </provider>
     </entry>
