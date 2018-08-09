@@ -75,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/app/routes/userinfo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -117,10 +117,10 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
+    <option name="x" value="36" />
     <option name="y" value="60" />
-    <option name="width" value="759" />
-    <option name="height" value="449" />
+    <option name="width" value="760" />
+    <option name="height" value="450" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -307,13 +307,7 @@
       <workItem from="1533649545546" duration="2455000" />
       <workItem from="1533712885217" duration="1509000" />
       <workItem from="1533724230194" duration="139000" />
-    </task>
-    <task id="LOCAL-00187" summary="update server">
-      <created>1532688952173</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1532688952173</updated>
+      <workItem from="1533733854889" duration="1487000" />
     </task>
     <task id="LOCAL-00188" summary="update server">
       <created>1532697624246</created>
@@ -651,27 +645,33 @@
       <option name="project" value="LOCAL" />
       <updated>1533724251426</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="update 3">
+      <created>1533734040494</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1533734040495</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143405000" />
+    <option name="totallyTimeSpent" value="144892000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="49" width="606" height="358" extended-state="0" />
-    <editor active="true" />
+    <frame x="30" y="48" width="607" height="359" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3140351" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49425286" visible="true" weight="0.31348512" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011013" side_tool="true" weight="0.22169812" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49889868" weight="0.22169812" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
+      <window_info active="true" id="npm" order="2" sideWeight="0.50574714" side_tool="true" visible="true" weight="0.31348512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23788546" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23684211" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -694,9 +694,24 @@
     <MESSAGE value="1" />
     <MESSAGE value="update" />
     <MESSAGE value="update 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 2" />
+    <MESSAGE value="update 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 3" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/libs/wxCustomeMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/userinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/libs/wxCustomeMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -847,7 +862,7 @@
     <entry file="file://$PROJECT_DIR$/app/routes/userinfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
         </state>
       </provider>
     </entry>
