@@ -15,11 +15,11 @@ function getToken(code) {
     method: 'get',
     url: reqUrl+qs.stringify(params)
   };
-  // console.log(options.url);
+  console.log('options.url',options.url);
   return new Promise((resolve, reject) => {
     request(options, function (err, res, body) {
       if (res) {
-        console.log(body)
+        console.log('getToken_body',body)
         resolve(body);
       } else {
         reject(err);
